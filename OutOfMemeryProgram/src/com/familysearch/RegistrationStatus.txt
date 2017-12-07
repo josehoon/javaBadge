@@ -1,0 +1,16 @@
+
+Students Class Registration for 2017-2018 School Year:
+
+******************************************************
+Registration 1
+Student Name : Sehoon Jo
+Class Name : English
+Class Credit : 3
+
+******************************************************
+Registration 2
+Student Name : Misook Jo
+Class Name : Math
+Class Credit : 3
+
+******************************************************
