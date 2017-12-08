@@ -30,7 +30,7 @@ public class exceptionSamples {
 
         // Print first 3 lines of file "C:\test\a.txt"
         for (int counter = 0; counter < 3; counter++)
-           System.out.println(fileInput.readLine());
+            System.out.println(fileInput.readLine());
 
         fileInput.close();
     }
@@ -49,6 +49,5 @@ public class exceptionSamples {
             e.printStackTrace();
             throw (e);
         }
-
     }
 }

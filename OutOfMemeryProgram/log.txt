@@ -1,0 +1,8 @@
+14:15:52.699 [main] ERROR com.familysearch.LoggingSample.MyLoggingSample - Error Message
+14:15:52.701 [main] WARN  com.familysearch.LoggingSample.MyLoggingSample - Warn Message
+14:15:52.702 [main] INFO  com.familysearch.LoggingSample.MyLoggingSample - Info Message
+14:15:52.702 [main] DEBUG com.familysearch.LoggingSample.MyLoggingSample - Debug Message
+15:16:42.069 [main] ERROR com.familysearch.LoggingSample.MyLoggingSample - Error Message
+15:16:42.073 [main] WARN  com.familysearch.LoggingSample.MyLoggingSample - Warn Message
+15:16:42.073 [main] INFO  com.familysearch.LoggingSample.MyLoggingSample - Info Message
+15:16:42.073 [main] DEBUG com.familysearch.LoggingSample.MyLoggingSample - Debug Message
