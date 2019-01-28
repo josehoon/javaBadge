@@ -1,5 +1,8 @@
 package com.familysearch.sharedComponent;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class OverloadExample {
 
     public static void main(String[] args) {
@@ -17,6 +20,7 @@ public class OverloadExample {
         private int weight;
         private int size;
         private boolean sweetness;
+        private Calendar harvestDate = null;
 
         public Fruits(String name) {
             this.name = name;
@@ -44,8 +48,9 @@ public class OverloadExample {
             System.out.println("3333333333333333333333333333333333");
         }
 
-        public void getName() {
-            System.out.println("Used getter: " + this.name);
+        public String getName() {
+            System.out.println(this.name);
+            return this.name;
         }
 
         public void getColor() {
@@ -63,6 +68,23 @@ public class OverloadExample {
         public boolean getSweetness() {
             return this.sweetness;
         }
+
+        String getHarvestDateString() {
+            if (harvestDate == null) {
+                return "None";
+            }
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy hh:mm:ss");
+            return dateFormat.format(harvestDate.getTime());
+        }
+
+        void harvestFruits(Calendar harvestDate) {
+            if (harvestDate == null) {
+                this.harvestDate = Calendar.getInstance();
+            }
+            else {
+                this.harvestDate = harvestDate;
+            }
+        }
     }
 
     public static class Apple extends Fruits {
@@ -72,4 +94,5 @@ public class OverloadExample {
             super.sweetness = true;
         }
     }
+
 }
